@@ -706,6 +706,7 @@ public class GameController implements Initializable
         {
             avatar4.setEffect(colorAdjust);
             avatar1.setEffect(null);
+            playerBetTotal.setTranslateX(-156);
         }
     }
    
