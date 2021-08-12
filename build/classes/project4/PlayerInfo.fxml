@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.BoxBlur?>
+<?import javafx.scene.effect.DisplacementMap?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.FloatMap?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project4.PlayerInfoController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#447fb26f" height="400.0" stroke="BLACK" strokeType="INSIDE" width="600.0">
+         <effect>
+            <BoxBlur />
+         </effect>
+      </Rectangle>
+      <Pane layoutX="7.0" layoutY="3.0" prefHeight="79.0" prefWidth="592.0">
+         <children>
+            <Label fx:id="headingLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="146.0" layoutY="12.0" prefHeight="56.0" prefWidth="300.0" text="CHOOSE AN AVATAR">
+               <font>
+                  <Font name="SignPainter-HouseScript" size="39.0" />
+               </font>
+               <effect>
+                  <DisplacementMap>
+                     <mapData>
+                        <FloatMap />
+                     </mapData>
+                  </DisplacementMap>
+               </effect>
+            </Label>
+         </children>
+      </Pane>
+      <GridPane fx:id="borderGrid" layoutX="37.0" layoutY="75.0" prefHeight="216.0" prefWidth="533.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <Rectangle fx:id="border" arcHeight="15.0" arcWidth="15.0" fill="#1f93ff00" height="83.0" stroke="BLACK" strokeType="OUTSIDE" strokeWidth="7.0" width="100.0" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+         </children>
+      </GridPane>
+      <GridPane fx:id="avatarGrid" layoutX="37.0" layoutY="75.0" prefHeight="216.0" prefWidth="533.0">
+        <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <ImageView id="avatar" fx:id="ZED" fitHeight="83.0" fitWidth="100.0" nodeOrientation="INHERIT" onMouseClicked="#avatarSelected" onMouseDragOver="#displayCatName" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+               <image>
+                  <Image url="@../images/ZED.png" />
+               </image>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </ImageView>
+            <ImageView fx:id="DIZZY" fitHeight="83.0" fitWidth="100.0" onMouseClicked="#avatarSelected" onMouseDragOver="#displayCatName" pickOnBounds="true" preserveRatio="true" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+               <image>
+                  <Image url="@../images/DIZZY.png" />
+               </image>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </ImageView>
+            <ImageView id="avatar" fx:id="SPOOKY" fitHeight="83.0" fitWidth="100.0" onMouseClicked="#avatarSelected" onMouseDragOver="#displayCatName" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+               <image>
+                  <Image url="@../images/BOO.png" />
+               </image>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </ImageView>
+            <ImageView id="avatar" fx:id="SALEM" fitHeight="83.0" fitWidth="100.0" onMouseClicked="#avatarSelected" onMouseDragOver="#displayCatName" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+               <image>
+                  <Image url="@../images/SALEM.png" />
+               </image>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </ImageView>
+            <ImageView id="avatarr" fx:id="GEOFF" fitHeight="83.0" fitWidth="100.0" onMouseClicked="#avatarSelected" onMouseDragOver="#displayCatName" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+               <image>
+                  <Image url="@../images/GEOFF.png" />
+               </image>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </ImageView>
+            <ImageView fx:id="BUSINESS_CAT" fitHeight="83.0" fitWidth="100.0" onMouseClicked="#avatarSelected" onMouseDragOver="#displayCatName" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+               <image>
+                  <Image url="@../images/BUSINESS_CAT.png" />
+               </image>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </ImageView>
+            <ImageView fx:id="LUNA" fitHeight="83.0" fitWidth="100.0" onMouseClicked="#avatarSelected" onMouseDragOver="#displayCatName" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+               <image>
+                  <Image url="@../images/LUNA.png" />
+               </image>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </ImageView>
+            <ImageView id="avatar" fx:id="CURSED_CAT" fitHeight="83.0" fitWidth="100.0" nodeOrientation="INHERIT" onMouseClicked="#avatarSelected" onMouseDragOver="#displayCatName" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+               <image>
+                  <Image url="@../images/CURSED.png" />
+               </image>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </ImageView>
+         </children>
+      </GridPane>
+      <Pane layoutX="19.0" layoutY="309.0" prefHeight="83.0" prefWidth="561.0">
+         <children>
+            <Button fx:id="okayButton" layoutX="439.0" layoutY="18.0" mnemonicParsing="false" onMouseClicked="#okayButtonClicked" prefHeight="46.0" prefWidth="108.0" text="OK">
+               <font>
+                  <Font name="SignPainter-HouseScript" size="22.0" />
+               </font>
+               <effect>
+                  <InnerShadow height="39.11" radius="21.3175" width="48.16">
+                     <color>
+                        <Color red="0.3618420958518982" green="0.3417397737503052" blue="0.3417397737503052" />
+                     </color>
+                  </InnerShadow>
+               </effect>
+            </Button>
+            <Label fx:id="playerNumberLabel" layoutX="14.0" layoutY="12.0" prefHeight="56.0" prefWidth="148.0" text="PLAYER 1:" underline="true">
+               <font>
+                  <Font name="SignPainter-HouseScript" size="43.0" />
+               </font>
+            </Label>
+            <Label fx:id="catName" alignment="CENTER" layoutX="168.0" layoutY="13.0" prefHeight="56.0" prefWidth="252.0" style="-fx-background-color: orange; -fx-opacity: 70%;" text="CAT NAME" textOverrun="CLIP">
+               <font>
+                  <Font name="SignPainter-HouseScript" size="43.0" />
+               </font>
+            </Label>
+            <Label fx:id="catNameClick" alignment="CENTER" layoutX="168.0" layoutY="13.0" prefHeight="56.0" prefWidth="252.0" style="-fx-background-color: orange;" text="CAT NAME" textOverrun="CLIP">
+               <font>
+                  <Font name="SignPainter-HouseScript" size="43.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

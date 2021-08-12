@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project4.ChoosePlayersFXMLController">
+   <children>
+      <Label fx:id="textLabel" layoutX="135.0" layoutY="52.0" text="How many players ??">
+         <font>
+            <Font name="Courier New" size="29.0" />
+         </font>
+      </Label>
+      <Button fx:id="playerButton1" layoutX="46.0" layoutY="185.0" mnemonicParsing="false" onAction="#playerButtonClicked" prefHeight="51.0" prefWidth="105.0" text="1">
+         <font>
+            <Font name="Castellar" size="13.0" />
+         </font>
+      </Button>
+      <Button fx:id="playerButton2" layoutX="183.0" layoutY="185.0" mnemonicParsing="false" onAction="#playerButtonClicked" prefHeight="51.0" prefWidth="105.0" text="2">
+         <font>
+            <Font name="Castellar" size="13.0" />
+         </font>
+      </Button>
+      <Button fx:id="playerButton3" layoutX="320.0" layoutY="185.0" mnemonicParsing="false" onAction="#playerButtonClicked" prefHeight="51.0" prefWidth="105.0" text="3">
+         <font>
+            <Font name="Castellar" size="13.0" />
+         </font>
+      </Button>
+      <Button fx:id="playerButton4" layoutX="450.0" layoutY="185.0" mnemonicParsing="false" onAction="#playerButtonClicked" prefHeight="51.0" prefWidth="105.0" text="4">
+         <font>
+            <Font name="Castellar" size="13.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
